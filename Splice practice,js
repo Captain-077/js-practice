@@ -1,0 +1,43 @@
+console.log('-------------------splice--------------------')
+    // splice - *********modify actual array
+    // splice(startIndex, deleteCount, ...array)
+const spliceArray = [1, 2, 5, 7, 8, 10, 12, 24];
+
+// -- add 9 between 8, 10
+console.log('------------- add 9 between 8, 10 --------------------');
+const indexOf10 = spliceArray.indexOf(10);
+console.log('index of 10 is', indexOf10);
+spliceArray.splice(indexOf10, 0, 9);
+console.log(spliceArray)
+
+// -- add 30 between 12, 24
+const indexof24 = spliceArray.indexOf(24);
+console.log('index of 24 is', indexof24);
+spliceArray.splice(indexof24, 0, 30);
+console.log(spliceArray);
+
+spliceArray.push(36);
+console.log(spliceArray);
+
+spliceArray.unshift(36);
+console.log(spliceArray);
+
+console.log('------------- remove last two element --------------------');
+console.log('length is', spliceArray.length);
+const startIndex = spliceArray.length - 2;
+console.log('start index ', startIndex)
+const removedElements = spliceArray.splice(startIndex)
+console.log('removed elements ', removedElements);
+console.log('actual array ', spliceArray)
+
+//TODO: remove two element from the middle
+console.log('------------- remove last two element from the middle --------------------');
+console.log(spliceArray);
+console.log('length is', spliceArray.length);
+const middleLength = spliceArray.length / 2;
+console.log('middleLength is', middleLength);
+const middleIndex2 = middleLength - 1;
+console.log('middle Index is', middleIndex2)
+const RemovedIndex2 = spliceArray.splice(middleIndex2, 2);
+console.log('Removed middle elements', RemovedIndex2);
+console.log('Actual array', spliceArray);
