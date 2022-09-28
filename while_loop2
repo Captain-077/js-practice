@@ -1,0 +1,33 @@
+const voterList = [{
+    name: "person",
+    hobbies: ["music", "reading"],
+    children: [{ name: "tina", age: 5 }]
+}]
+
+
+const filterList = [];
+const len = voterList.length;
+let index = 0;
+
+
+while (index < len) {
+    let FoundIndex = -1;
+    const voter = voterList[index];
+    const hobbiesLen = voter.hobbies.length;
+    let innerIndex = 0;
+    while (innerIndex < hobbiesLen) {
+        if (voter.hobbies[innerIndex] == "reading") {
+            FoundIndex = innerIndex
+            break;
+        }
+        innerIndex += 1;
+    }
+
+    if (FoundIndex != -1) {
+        filterList.push(voter);
+    }
+    index += 1;
+
+}
+
+console.log('My filtered list is', filterList);
