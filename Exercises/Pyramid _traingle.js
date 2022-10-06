@@ -1,29 +1,56 @@
-let outerIndex = 4;
-let outerIndex2 = 0;
+//000*
+//00***
+//0*****
+//*******
 
 
-while (outerIndex2 < 6) {
-    let str2 = ''
-    let innerIndex2 = 0
-    while (innerIndex2 <= outerIndex2) {
-        str2 += '* '
-        innerIndex2 += 1
+
+// 
+//   **
+//   ***
+//   ****
+
+//000* 
+//00***
+//0*****
+//*******
+
+
+let OuterIndex = 0;
+
+while (OuterIndex < 4) {
+    let innerIndex = 3
+    let str = ''
+
+    //Zero shape
+
+    while (OuterIndex < innerIndex) {
+        str += '0';
+        innerIndex--
     }
-    console.log(str2);
-    outerIndex2 += 1
 
-}
+    //ulta triangle shape
 
-while (outerIndex < 5) {
-    let str = '';
-    let innerIndex = 0;
-    while (innerIndex <= outerIndex) {
-        str += '* '
-        innerIndex += 1;
+    innerIndex = 0;
+    while (innerIndex <= OuterIndex) {
+        str += '*'
+        innerIndex++
     }
-    console.log(str);
-    outerIndex -= 1;
 
+    /////////////////////seedha triangle shape
+    innerIndex = 0;
 
+    while (innerIndex < OuterIndex) {
+        if (OuterIndex == 0) {
+            str += ' ';
+            break;
+        }
+
+        str += '*'
+        innerIndex++
+    }
+
+    console.log(str)
+    OuterIndex++;
 
 }
