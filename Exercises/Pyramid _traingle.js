@@ -54,3 +54,29 @@ while (OuterIndex < 4) {
     OuterIndex++;
 
 }
+
+
+
+
+
+
+
+
+
+
+////////for
+
+for (let OuterIndex = 0; OuterIndex <= 4; OuterIndex++) {
+
+    let str = ''
+    let innerIndex = 3
+
+    for (let innerIndex = 3; OuterIndex < innerIndex; innerIndex--) {
+        str += '0'
+    }
+
+    console.log(str)
+
+
+
+}
