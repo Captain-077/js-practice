@@ -3,7 +3,13 @@ while (outerIndex < 6) {
     let str = ''
     let innerIndex = 0
     while (innerIndex <= outerIndex) {
-        if (innerIndex % 2 == 0 || innerIndex % 5 == 0) {
+
+        if (outerIndex == 0) {
+            str = '$ '
+            break;
+        }
+
+        if (innerIndex % 3 == 2) {
             str += '$ '
         } else {
             str += '* '
@@ -12,5 +18,11 @@ while (outerIndex < 6) {
     }
     console.log(str);
     outerIndex += 1
-
 }
+
+// $ 
+// * * 
+// * * $ 
+// * * $ * 
+// * * $ * * 
+// * * $ * * $
