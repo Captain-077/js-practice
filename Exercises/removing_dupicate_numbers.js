@@ -1,22 +1,25 @@
-const input = [1, 3, 7, 5, 3, 10, 11, 1]
+const input = [1, 10, 3, 7, 5, 3, 10, 11, 1]
 
 let index = 0
-let value = 0
 let len = input.length
 let sorted = input.sort();
-// console.log(sorted);
+let newArr = []
+let dupArr = []
+    // console.log(sorted);
 
 while (index < len) {
     let add = sorted[index]
     let sorted2 = sorted[index + 1]
 
-    if (add == sorted2) {
-        sorted.push();
+    if (add !== sorted2) {
+        newArr.push(add);
     } else {
-        console.log("no");
+        dupArr.push(add);
     }
 
     index++
 }
 
-console.log(input)
+console.log("sorted values", input)
+console.log('After removing duplicate arrrays', newArr)
+console.log('removed duplicate arrrays', dupArr)
