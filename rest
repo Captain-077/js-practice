@@ -1,0 +1,17 @@
+function log (...rest){
+    
+    const len = rest.length
+    console.log('lenghth',len)
+        console.log('rest',rest)
+
+    for(let i=0; i<len; i++){
+        const item = rest[i];
+        console.log(item)
+    }
+}
+
+log(10,20,30)
+
+const Result = [1,2,3];
+log(Result)
+log(...Result)
