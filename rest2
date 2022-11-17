@@ -1,0 +1,29 @@
+function sum(...rest){
+    let val1 = 0;
+    const len = rest.length
+    for(let i=0; i<len; i++){
+        const item = rest[i]
+        // if(item != -1){
+            
+        // }
+        val1+=item
+            // console.log('value',val1)
+    }
+        
+    return val1
+}
+const valStore = sum(10,5,10,-30)
+console.log('sum',valStore)
+
+SEtInterval/////
+
+const xyx = setInterval(callme,1000)
+let count = 0
+function callme(){
+    
+    console.log('called')
+    count++
+    if(count >= 5){
+        clearInterval(xyx)
+    }
+}
