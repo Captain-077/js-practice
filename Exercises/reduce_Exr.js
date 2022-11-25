@@ -1,16 +1,17 @@
-const person = ["Pervez", 36];
+const arr = ['pervez', 36]
 
-const result = person.reduce(processFn, 0);
-const nextItem = person.reduce(processFn, 0);
-// console.log("result", result);
+const newObj = arr.reduce(process, {});
 
-function processFn(result, nextItem) {
-    console.log(`name: ${result}`, `age: ${nextItem}`)
-    return result, nextItem;
+function process(result, nextItem, index) {
+
+    if (index === 0) {
+        result.name = nextItem;
+    }
+
+    if (index === 1) {
+        result.age = nextItem;
+    }
+    return result
 }
 
-const obj = {}
-obj.name = `${result}`
-obj.age = `${nextItem}`
-
-console.log(obj)
+console.log(newObj)
