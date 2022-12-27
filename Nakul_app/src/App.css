@@ -1,0 +1,134 @@
+/* .App {
+  text-align: center;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body{
+ display: flex;
+ flex-direction: column;
+ justify-content:space-between;
+ width: 100%;
+ height: 100vh;
+ background-color: #f1f1f1;
+}
+
+h1{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  color:white;
+}
+
+.new{
+  width: 100%;
+  height: 90vh;
+  background-color: rgb(187, 67, 67);
+}
+
+
+.foot{
+  width: 100%;
+  background-color: rgb(63, 59, 62);
+  height: 10vh;
+
+}
+
+.addbtn{
+width:10%;
+height: 5vh;
+background-color: darkgreen;
+border: none;
+color:white;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+cursor: pointer;
+
+}
+
+.number{
+  margin-top:30vh;
+ color: black;
+} */
+
+
+.main{background-color:#3d6ebe;
+  width:100%;
+  height:100vh;
+  }
+  header{
+  width:100%;
+  height:auto;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  padding-top:20px;
+  }
+.logo{
+  color:rgb(121, 233, 73);
+  font-size:30px;
+  }
+nav ul{
+  display:flex;
+  }
+   nav ul li{
+  text-decoration:none;
+  list-style-type:none;
+  margin:0px 15px 0px 15px;
+  color:rgb(0, 0, 0);
+  }
+   nav ul li a{
+ text-decoration:none;
+  color:rgb(249, 0, 0);
+font-size:20px;
+  transition:0.5s ease-in-out;
+  }
+     nav ul li a:hover{
+color:#2596be;
+  }
+button{
+  width:100px;
+  height:40px;
+  font-size:17px;
+  background-color:rgb(177, 51, 51);
+  border:none;
+cursor: pointer;
+  color: wheat;
+  }
