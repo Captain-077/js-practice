@@ -89,46 +89,107 @@ cursor: pointer;
 } */
 
 
-.main{background-color:#3d6ebe;
-  width:100%;
-  height:100vh;
-  }
-  header{
-  width:100%;
-  height:auto;
-  display:flex;
-  justify-content:space-around;
-  align-items:center;
-  padding-top:20px;
-  }
-.logo{
-  color:rgb(121, 233, 73);
-  font-size:30px;
-  }
-nav ul{
-  display:flex;
-  }
-   nav ul li{
-  text-decoration:none;
-  list-style-type:none;
-  margin:0px 15px 0px 15px;
-  color:rgb(0, 0, 0);
-  }
-   nav ul li a{
- text-decoration:none;
-  color:rgb(249, 0, 0);
-font-size:20px;
-  transition:0.5s ease-in-out;
-  }
-     nav ul li a:hover{
-color:#2596be;
-  }
-button{
-  width:100px;
-  height:40px;
-  font-size:17px;
-  background-color:rgb(177, 51, 51);
-  border:none;
-cursor: pointer;
+.main {
+  background-color: #3d6ebe;
+  width: 100%;
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.logo {
+  color: rgb(121, 233, 73);
+  font-size: 30px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0px 15px 0px 15px;
+  color: rgb(0, 0, 0);
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(249, 0, 0);
+  font-size: 20px;
+  transition: 0.5s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #2596be;
+}
+
+button {
+  width: 100px;
+  height: 40px;
+  font-size: 17px;
+  background-color: rgb(177, 51, 51);
+  border: none;
+  cursor: pointer;
   color: wheat;
-  }
+}
+
+.normal {
+  background-color: white;
+  color: black;
+  border: solid black 1px;
+}
+
+.primary {
+  background-color: blue;
+}
+
+
+.danger {
+  background-color: red;
+}
+
+
+/* ///////////////////////////////////////////////////////////////////////////////// */
+
+.box ul{
+  padding-left: 0;
+  padding: 40px;
+}
+
+.listOuter{
+  margin: 0;
+  padding: 0 20px;
+}
+
+.listInner {
+  list-style-type: none;
+  column-count: 3;
+  padding:20px;
+  background-color: #d6cdcd;
+  margin-bottom: 40px;
+  text-decoration:none;
+  border-radius: 8px;
+}
+
+
+.listimg {}
+
+.listimg img {
+  width: 40%;
+}
+
+.listheading {
+  font-size: 36px;
+  color:black;
+  text-decoration:none;
+}
+
+.listtext {}
