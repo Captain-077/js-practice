@@ -1,4 +1,5 @@
 import Styledbtn from './styledbtn';
+import { IconName } from "react-icons/fa";
 
 function ListItemComponent(props) {
     const { imgURL,heading, description } = props;

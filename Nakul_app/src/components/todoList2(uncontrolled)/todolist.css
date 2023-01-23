@@ -1,0 +1,39 @@
+.todoBody{
+
+    background-color: blue;
+    padding: 50px;
+}
+.AddBox{
+
+}
+
+.listOuter{
+
+}
+
+.listbox{
+
+}
+
+
+.Addbtn{
+
+}
+
+.textbox{
+
+}
+
+.listbox{
+
+}
+
+
+
+.active{
+    background-color: rgb(255, 255, 255);
+}
+
+.done{
+    background-color: rgb(68, 184, 50);
+}

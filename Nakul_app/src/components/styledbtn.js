@@ -1,3 +1,6 @@
+import { FaAngellist } from "react-icons/fa";
+
+
 
 function Styledbtn (props){
 const {type, label} = props;
@@ -5,7 +8,7 @@ const {type, label} = props;
 return(
 <div>
 
-<button className={type}>{label}</button>
+<button className={type}>{label}<FaAngellist/></button>
 
 </div>
 
