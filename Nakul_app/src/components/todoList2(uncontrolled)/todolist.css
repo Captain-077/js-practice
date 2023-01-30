@@ -1,31 +1,49 @@
 .todoBody{
-
-    background-color: blue;
-    padding: 50px;
-}
-.AddBox{
-
-}
-
-.listOuter{
-
-}
-
-.listbox{
-
+    background-color: rgb(9, 112, 138);
+    padding: 100px;
+    height: auto;
 }
 
 
-.Addbtn{
+.addbody{
+    margin: 0px 20%;
+    display: block;
 
 }
 
-.textbox{
-
+.addbody input{
+    width:70%;
+    border: none;
+    padding: 14px 20px;
+    font-size: 18px;
+    border-radius: 30px;
 }
 
-.listbox{
+.addbody input::placeholder{
+    color:#c5bcbc;
+}
 
+.addbody input:focus-visible{
+    border: none;
+    outline: 0px;
+}
+
+
+.addbody button{
+    border-radius: 30px;
+    margin-left: 1%;
+    width:20%;
+    padding: 13px;
+    background-color:rgb(127, 195, 25);
+    color:white;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.addbody button:disabled{
+    background-color: rgb(179, 179, 185);
+    cursor:default;
 }
 
 
@@ -36,4 +54,73 @@
 
 .done{
     background-color: rgb(68, 184, 50);
+}
+
+
+.todotask{
+    margin: 25px 22%;
+    display: block;
+    padding: 0;
+    
+}
+
+.todotask li{
+    list-style: none;
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    padding: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.todotask li input{
+    width: 90%;
+    border: 1px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border-radius: 30px;
+    display: block;
+}
+
+
+.todotask li button{
+    border-radius: 50px;
+    margin-left: 1%;
+   width:31%;
+    padding: 10px 20px;
+    background-color:rgb(127, 195, 25);
+    color:white;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.red{
+    background-color: rgb(152, 29, 29) !important;
+}
+
+.orange
+{
+    background-color: rgb(215, 144, 11) !important;
+}
+
+.finalTask{
+    width: 90%;
+    border: 1px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border-radius: 30px;
+    display: block;
+    background-color: white;
+}
+
+.done{
+    background-color: rgb(167, 167, 177) !important;
+    color: black;
+}
+
+.finaltaskdone{
+text-decoration: line-through;
 }
