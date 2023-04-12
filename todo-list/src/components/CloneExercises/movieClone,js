@@ -1,0 +1,41 @@
+const movie = {
+    
+    name:"sholey",
+    releasedDate:"1980",
+    cast:[
+        {actor:"amitabh"},
+        {actor:"dharmender"},
+        {actor:"sanjeev"},
+        {actor:"hema"},
+        {actor:"jaya"},
+        ],
+     cost: "1,00,000",
+     earning:"2,00,00,000"
+}
+      const NewMovie = {...movie}
+      NewMovie.cast =[...NewMovie.cast];
+      NewMovie.cast[0] = {...NewMovie.cast[0]};
+         NewMovie.cast[1] = {...NewMovie.cast[1]};
+            NewMovie.cast[2] = {...NewMovie.cast[2]};
+               NewMovie.cast[3] = {...NewMovie.cast[3]};
+                  NewMovie.cast[4] = {...NewMovie.cast[4]};
+                 
+      NewMovie.cast[0].earning = "10,00,000"
+        NewMovie.cast[1].earning = "10,00,000"
+          NewMovie.cast[2].earning = "10,00,000"
+            NewMovie.cast[3].earning = "12,00,000"
+              NewMovie.cast[4].earning = "12,00,000"
+      
+      console.log(NewMovie)
+      
+      console.log(movie);
+      
+      
+    //   console.log(NewMovie);
+        
+        
+        
+        
+        
+        
+    
