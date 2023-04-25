@@ -1,0 +1,42 @@
+body{
+    background-image: url("https://images.unsplash.com/photo-1510070009289-b5bc34383727?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+      }
+
+      
+.todo-container {
+    padding: 12px;
+    border: 1px solid rgb(231, 226, 226);
+    border-radius: 5px;
+    margin: 8px auto;
+    width:50%;
+    background-color: antiquewhite;
+    padding: 30px;
+  }
+
+ 
+  
+  .todo-list {
+    margin: 0;
+    padding: 0;
+    margin-top: 8px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .todo-item {
+    background: #5ab3d6;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .todo-item-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
