@@ -1,13 +1,23 @@
-function TodoItemComponent(props) {
-    const { text, id, onMarkDone, status, onDelete } = props;
+import { useState,useRef } from "react";
 
+function TodoItemComponent(props) {
+    const { text,id,status, onMarkDone,onDelete,onUpdateText } = props;
+
+
+
+  const[isEditing,setEditing] = useState(false);
+  const inputRef = useRef()
 
 function renderActions(){
 
 if(status == 'active'){
 return(
   <>
-  <button id={`${id}-edit`} >Edit</button>
+  <button id={`${id}-edit`} onClick={handleEdit} >
+    
+    {isEditing ? `Edit done`: `Edit`}
+    
+    </button>
   <button id={`${id}-done`} onClick={onMarkDone}>Done</button>
   </>
 )}
@@ -15,6 +25,19 @@ return(
 else{
   return null;
 }
+
+}
+
+function handleEdit(){
+
+
+if(isEditing){
+const updatedText = inputRef.current.value; 
+onUpdateText(id,updatedText)
+
+}
+
+setEditing(!isEditing)
 
 }
 
@@ -27,7 +50,8 @@ onDelete(id)
 
     return (
       <li className="todo-item">
-        <p>{text}</p> 
+       {isEditing ? <input defaultValue = {text} ref = {inputRef} /> :  <p>{text}</p>} 
+       
         <div className="todo-item-actions">
          {renderActions()}
           <button id={`${id}-delete`} onClick={handleDelete}>Delete</button>

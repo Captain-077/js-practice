@@ -6,7 +6,13 @@ const inputRef = useRef()
 
 function handleAdd(){
 const text = inputRef.current.value; 
-onAdd(text);
+
+if(text !== ""){
+  onAdd(text);
+}
+else{
+  return null;
+}
 
 }
 

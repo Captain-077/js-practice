@@ -11,6 +11,7 @@ const todoListArray = [
 export function useTodosHook(){
 const[list, updateList] = useState(todoListArray)
 
+
 function markDone(event){
 const id = event.target.id.split('-')[0]
 const index = list.findIndex((item) => item.id === id); //Doubt: why not work with id directy
@@ -34,18 +35,26 @@ updateList(cloneList)
 
 function deleteItem(id){
 const cloneList = list.filter((item) => item.id !== id); //doubt
-console.log('ID',id)
+// console.log('ID',id)
 
 updateList(cloneList);
 
 }
 
+function updateText(id,updatedText){
+  const index = list.findIndex((item) => item.id === id); //Doubt: why not work with id directy
+  // console.log('index',index);
+  const cloneList = [...list];
+  cloneList[index] = {...cloneList[index],text:updatedText}
+  updateList(cloneList);
+}
 
-return{
+return{ 
     list,
     markDone,
     addItem,
-    deleteItem
+    deleteItem,
+    updateText
 }
 
 
