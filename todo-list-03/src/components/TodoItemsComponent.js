@@ -3,10 +3,10 @@ import { useState,useRef } from "react";
 function TodoItemComponent(props) {
     const { text,id,status, onMarkDone,onDelete,onUpdateText } = props;
 
-
-
   const[isEditing,setEditing] = useState(false);
   const inputRef = useRef()
+
+
 
 function renderActions(){
 
@@ -29,14 +29,10 @@ else{
 }
 
 function handleEdit(){
-
-
 if(isEditing){
 const updatedText = inputRef.current.value; 
 onUpdateText(id,updatedText)
-
 }
-
 setEditing(!isEditing)
 
 }
